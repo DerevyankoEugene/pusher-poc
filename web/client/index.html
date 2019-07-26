@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>title</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/@pusher/chatkit-client@1/dist/web/chatkit.js"></script>
+  </head>
+
+  <body>
+    <h1>hi</h1>
+    <div class="lines">
+      <div class="line">
+        <p>Users</p>
+        <div id="user-list"></div>
+      </div>
+      <div class="line">
+        <p>Connect</p>
+        <label for="connect-user-id">
+          ID
+          <input id="connect-user-id" type="text" value="ed.oji.test@gmail.com" />
+        </label>
+        <input id="connect-button" type="button" value="Connect" />
+        <label for="current-user-info">
+          <p id="current-user-info"></p>
+        </label>
+      </div>
+
+      <div class="line clearfix">
+        <p>Message</p>
+        <div class="message-panel left">
+          <div>
+            <label for="send-to-room-id">
+              Room ID
+              <input id="send-to-room-id" type="text" value="" />
+            </label>
+          </div>
+          <input id="connect-room-button" type="button" value="Connect Room" />
+          <div>
+            <label for="message-to-send">
+              Message
+              <input id="message-to-send" type="text" value="some message" />
+            </label>
+            <input id="send-message-button" type="button" value="Send" />
+          </div>
+        </div>
+        <div id="history" class="message-panel right"></div>
+      </div>
+
+      <div class="line">
+        <p>Create user</p>
+        <label for="new-user-id"
+          ><input id="new-user-id" type="text" value="ed.oji.test+pusher1@gmail.com"
+        /></label>
+        <label for="new-user-name"><input id="new-user-name" type="text" value="ed.oji.test+pusher1"/></label>
+        <input id="create-user-button" type="button" value="Create" />
+      </div>
+      <div class="line">
+        <p>Create room</p>
+        <label for="new-room-name">
+          Name<input id="new-room-name" type="text" value="ed.oji.test room"
+        /></label>
+        <label for="new-room-creator_id"
+          >Creator<input id="new-room-creator_id" type="text" value="ed.oji.test@gmail.com"
+        /></label>
+        <label for="new-room-users">
+          <textarea id="new-room-users" rows="4">
+ed.oji.test@gmail.com,ed.oji.test+pusher1@gmail.com
+</textarea
+          >
+        </label>
+        <input id="create-room-button" type="button" value="Create" />
+      </div>
+    </div>
+  </body>
+</html>

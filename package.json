@@ -1,0 +1,22 @@
+{
+  "name": "pusher",
+  "version": "1.0.0",
+  "description": "pusher integration POC",
+  "main": "src/index.js",
+  "author": "Eugene Derevyanko",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node src/"
+  },
+  "dependencies": {
+    "@pusher/chatkit-server": "^2.0.1",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.49"
+  }
+}

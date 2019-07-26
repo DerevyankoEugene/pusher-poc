@@ -1,0 +1,43 @@
+.line {
+  border: 1px solid lightgray;
+  padding: 5px;
+}
+.line:nth-child(odd) {
+  background-color: beige;
+}
+input[type="text"] {
+  width: 250px;
+}
+#user-list {
+  overflow: auto;
+  max-height: 200px;
+}
+
+.message-panel {
+  min-height: 200px;
+  box-sizing: border-box;
+  width: 50%;
+  max-height: 300px;
+  overflow-y: auto;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.message {
+  font-family: "Courier New", Courier, monospace;
+}
+.message.incoming {
+  font-weight: bolder;
+  color: blue;
+}
+#history {
+  background-color: azure;
+}
