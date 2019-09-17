@@ -5,7 +5,7 @@ let app = {
 async function initPusher(userId) {
   const { TokenProvider, ChatManager } = Chatkit;
   const chatManager = new ChatManager({
-    instanceLocator: "v1:us1:77f76389-a828-4605-bb7d-083f9b1383a3",
+    instanceLocator: "v1:us1:ab481df6-cfe9-4318-86ed-1a36e46183a7",
     userId,
     tokenProvider: new TokenProvider({ url: "/pusher/auth" }),
   });
@@ -16,9 +16,9 @@ async function initPusher(userId) {
       const roomsText = currentUser.rooms
         .map((r) => JSON.stringify({ id: r.id, unread: r.unreadCount }))
         .join("<br/>");
-      document.getElementById("current-user-info").innerHTML = `CurrentUser: ${app.currentUser.name} ${
-        app.currentUser.id
-      }, <br/>rooms:<br/>${roomsText}`;
+      document.getElementById(
+        "current-user-info",
+      ).innerHTML = `CurrentUser: ${app.currentUser.name} ${app.currentUser.id}, <br/>rooms:<br/>${roomsText}`;
       console.log("Successful connection", currentUser);
     })
     .catch((err) => {

@@ -6,8 +6,8 @@ const koaBody = require("koa-bodyparser");
 const Chatkit = require("@pusher/chatkit-server");
 
 const chatkit = new Chatkit.default({
-  instanceLocator: "v1:us1:77f76389-a828-4605-bb7d-083f9b1383a3",
-  key: "abc7bc02-2bbd-429b-81f9-b8bb6485c8f4:BrVz9ThuLb5OipB+zeceHPNYjjb2/rHmNKlaIFnWsJI=",
+  instanceLocator: "v1:us1:ab481df6-cfe9-4318-86ed-1a36e46183a7",
+  key: "18dbfc0c-3eca-4768-acfc-a10abba0c3cd:vHGnSTrn5Zi7WenxF0sSyoGI7Kn4eg1yMg8Da78aR8E=",
 });
 
 const appPort = 8765;
